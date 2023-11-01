@@ -12,7 +12,7 @@ def calculate_volume(length, width, height):
 
 
 def calculate_surface_area(length, width, height):
-    return 2 * (length * width + length * height + width * height)
+    return 2 * (calculate_area(length, width) + calculate_area(length, height)  + calculate_area(width, height))
 
 
 # Duplicate code: calculate_area and calculate_perimeter functions have similar calculations.
